@@ -2,7 +2,198 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
+$primary: #dc2626;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+body {
+  background-color: #fffbeb !important;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.bg-font-big {
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+  }
+  font-size: 8rem;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  opacity: 0.2;
+  color: #e6d9c1;
+}
+
+// ----- Navbar -----
+.navbar {
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  background-color: #fffbeb !important;
+
+  .nav-item {
+    padding: 0 10px;
+  }
+
+  .nav-link {
+    color: #dc2626;
+    font-weight: 500;
+
+    &.active {
+      color: #b91c1c;
+    }
+
+    &:hover {
+      color: #b91c1c;
+    }
+  }
+}
+
+// ----- End navbar -----
+
+// ----- Start Banner -----
+
+.banner {
+  .bg-font-big {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1;
+    bottom: 120px;
+  }
+
+  .bottom-img {
+    width: 100%;
+    z-index: 11;
+    position: relative;
+  }
+
+  .banner-img-wrapper {
+    height: auto;
+    @media (min-width: 992px) {
+      height: 500px;
+    }
+  }
+
+  h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #dc2626;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .banner-img-1 {
+    width: 200px;
+    @media (min-width: 992px) {
+      width: 400px;
+    }
+    height: auto;
+    z-index: 1111;
+    position: relative;
+  }
+
+  .banner-img-2 {
+    width: 200px;
+    @media (min-width: 992px) {
+      width: 400px;
+    }
+    height: auto;
+    position: absolute;
+    left: 250px;
+    top: 120px;
+    z-index: 11;
+  }
+}
+
+// ----- End Banner -----
+
+// ----- Start What we serve -----
+
+.what-we-serve-section {
+  background: linear-gradient(90deg, #d83727 70%, #f59a40 70%);
+  .what-we-serve {
+    padding: 40px 0;
+    background-color: #ef8e2c;
+    border-radius: 40px;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    width: max-content;
+    padding: 10px 30px;
+  }
+
+  .menu-items {
+    background-color: #f3e9d6;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 30px;
+    img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      padding: 5px 25px;
+      background-color: #ef8e2c;
+      border-radius: 30px;
+      color: #fff;
+      width: max-content;
+      font-size: 1.3rem;
+    }
+  }
+}
+// ----- End What we serve -----
+
+// Start Contact
+.contact-section {
+  iframe {
+    border-radius: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+      color: #b91c1c;
+    }
+  }
+  .logo-contact {
+    width: 200px;
+    height: 200px;
+  }
+}
+.review-section {
+  .item {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 20px;
+
+    .ratings {
+      display: inline-flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-flex;
+        padding: 0 5px;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
