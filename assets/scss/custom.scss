@@ -30,7 +30,7 @@ body {
 // ----- Navbar -----
 .navbar {
   .logo {
-    width: 100px;
+    width: 180px;
     height: auto;
   }
 
@@ -59,6 +59,7 @@ body {
 // ----- Start Banner -----
 
 .banner {
+  padding-top: 130px;
   .bg-font-big {
     position: absolute;
     left: 50%;
@@ -82,7 +83,10 @@ body {
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 4rem;
+    @media (min-width: 992px) {
+      font-size: 6rem;
+    }
     font-weight: bold;
     color: #dc2626;
   }
@@ -97,7 +101,7 @@ body {
       width: 400px;
     }
     height: auto;
-    z-index: 1111;
+    z-index: 111;
     position: relative;
   }
 
@@ -133,6 +137,7 @@ body {
 
   .menu-items {
     background-color: #f3e9d6;
+    width: 100%;
     border-radius: 30px;
     align-items: center;
     justify-content: center;
@@ -140,10 +145,12 @@ body {
     flex-direction: column;
     padding: 30px;
     margin-bottom: 30px;
+    height: 300px;
     img {
       width: 200px;
       height: 200px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      object-fit: contain;
     }
     h2 {
       padding: 5px 25px;
@@ -176,10 +183,17 @@ body {
 }
 .review-section {
   .item {
+    height: 340px;
     text-align: center;
     background-color: #fff;
-    padding: 50px 20px;
+    padding: 20px;
     border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .ratings {
       display: inline-flex;
@@ -195,5 +209,111 @@ body {
         height: 20px;
       }
     }
+  }
+
+  .owl-item.active.center {
+    .item {
+      height: 400px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      margin-top: 0;
+    }
+  }
+}
+
+// ---- Small banner ---- //
+.small-banner {
+  background-color: #d63727;
+  .first-img {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -120px;
+    left: 0;
+  }
+  .second-img {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    top: -200px;
+  }
+  h2 {
+    font-size: 7rem;
+    font-style: italic;
+    color: #fff;
+    opacity: 0.2;
+    &.first {
+      text-align: left;
+    }
+    &.second {
+      text-align: right;
+    }
+  }
+}
+
+// Categing Services
+.catering-services-section {
+  background-image: url("../img/others/catering.jpg");
+  background-repeat: no-repeat;
+}
+.catering-services-div {
+  background-color: #d63727;
+  text-align: center;
+  padding: 30px;
+
+  @media (min-width: 1200px) {
+    padding: 50px 100px;
+  }
+  .logo-div {
+    background-color: #fff;
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .heading {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    width: max-content;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+
+  p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
+
+// Footer
+.footer {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.whatsapp {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  img {
+    width: 50px;
+    height: 50px;
   }
 }
