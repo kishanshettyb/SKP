@@ -17,7 +17,6 @@ $(".owl-carousel").owlCarousel({
     },
     1000: {
       items: 3,
-      loop: false,
     },
   },
 });

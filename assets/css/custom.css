@@ -12005,17 +12005,14 @@ body {
 }
 
 .review-section .item {
-  height: 340px;
-  text-align: center;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+}
+.review-section .item img {
+  width: auto !important;
+  height: 400px !important;
+  object-fit: contain !important;
 }
 .review-section .item .ratings {
   display: inline-flex;
@@ -12032,9 +12029,12 @@ body {
   height: 20px;
 }
 .review-section .owl-item.active.center .item {
-  height: 400px;
+  height: 450px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  margin-top: 0;
+}
+
+.owl-carousel .owl-item img {
+  border-radius: 30px;
 }
 
 .small-banner {

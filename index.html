@@ -24,6 +24,28 @@
 </head>
 
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Us</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body position-relative">
+
+          <iframe id="JotFormIFrame-241733866990065" title="Form" onload="window.parent.scrollTo(0,0)"
+            style="border-radius: 30px;width: 100%;" allowtransparency="true"
+            allow="geolocation; microphone; camera; fullscreen" src="https://form.jotform.com/241733866990065"
+            frameborder="0" style="min-width:100%;max-width:100%;height:539px;border:none;" scrolling="no">
+          </iframe>
+          <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+          <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-241733866990065']", "https://form.jotform.com/")</script>
+          <div class="modal-foot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Start Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar-example2">
     <div class="container">
@@ -56,11 +78,11 @@
             <a class="nav-link" href="#location">Our Location</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <button class="btn btn-primary px-4" type="submit">
+        <div class="d-flex">
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary px-4">
             Contact Us
           </button>
-        </form>
+        </div>
       </div>
     </div>
   </nav>
@@ -78,7 +100,8 @@
               leavened for a soft,
               chewy texture, and cooked in a tandoor or on a griddle. They can be plain or stuffed with ingredients like
               potatoes or paneer.</p>
-            <button class="btn btn-outline-primary btn-lg my-3">Contact Us</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+              class="btn btn-outline-primary btn-lg my-3">Contact Us</button>
           </div>
           <div class="col-md-6">
             <div class="position-relative banner-img-wrapper d-none d-lg-block">
@@ -157,34 +180,16 @@
         <div class="row d-flex align-items-center justify-center">
           <div class="col-md-7">
             <div class="container">
-              <h2 class="fst-italic display-2 text-primary fw-bold text-uppercase">About Us</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae magnam pariatur in vitae aut ex, totam
-                ad
-                impedit tempore possimus ducimus sint voluptatibus, sit quaerat dolor et quibusdam tempora blanditiis!
-              </p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque officiis quasi maiores ab doloribus,
-                minima,
-                porro dolore in impedit incidunt esse tempore fugit modi magni, dolorum sunt consequatur expedita
-                libero!
-              </p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae magnam pariatur in vitae aut ex, totam
-                ad
-                impedit tempore possimus ducimus sint voluptatibus, sit quaerat dolor et quibusdam tempora blanditiis!
-              </p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque officiis quasi maiores ab doloribus,
-                minima,
-                porro dolore in impedit incidunt esse tempore fugit modi magni, dolorum sunt consequatur expedita
-                libero!
-              </p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae magnam pariatur in vitae aut ex, totam
-                ad
-                impedit tempore possimus ducimus sint voluptatibus, sit quaerat dolor et quibusdam tempora blanditiis!
-              </p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque officiis quasi maiores ab doloribus,
-                minima,
-                porro dolore in impedit incidunt esse tempore fugit modi magni, dolorum sunt consequatur expedita
-                libero!
-              </p>
+              <h2 class="fst-italic display-2 mb-4 text-primary fw-bold text-uppercase">About Us</h2>
+              <h4 class="lh-base"> SKP Foods brings the taste of tradition to your plate, offering a delightful
+                variety
+                of catering
+                services across India. We specialize in authentic Indian cuisine, featuring both vegetarian and
+                non-vegetarian options. From the rich flavors of curries to the sizzling specialties of our tandoor, we
+                cater to all your culinary desires.
+              </h4>
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary btn-lg
+              px-10 mt-4">Contact Us</button>
             </div>
           </div>
           <div class="col-md-5">
@@ -208,364 +213,28 @@
       <div class="container">
         <div class="owl-carousel owl-theme">
           <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
+            <img src="./assets/img/reviews/img-1 (1).png" class="img-fluid" alt="">
           </div>
           <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
+            <img src="./assets/img/reviews/img-1 (2).png" class="img-fluid" alt="">
           </div>
           <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
+            <img src="./assets/img/reviews/img-1 (3).png" class="img-fluid" alt="">
           </div>
           <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
+            <img src="./assets/img/reviews/img-1 (4).png" class="img-fluid" alt="">
           </div>
           <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
+            <img src="./assets/img/reviews/img-1 (5).png" class="img-fluid" alt="">
           </div>
           <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
+            <img src="./assets/img/reviews/img-1 (6).png" class="img-fluid" alt="">
           </div>
           <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
+            <img src="./assets/img/reviews/img-1 (7).png" class="img-fluid" alt="">
           </div>
           <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, ullam aliquam autem, blanditiis
-              exercitationem debitis maxime a sapiente totam deleniti, labore sunt dolorem culpa possimus provident
-              aliquid? Quas, est?</p>
-            <h2>Mr. p. Henry</h2>
-            <h4>Sr. Manager</h4>
-            <ul class="ratings">
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-              <li>
-                <img src="./assets/img/icons/star.svg" alt="">
-              </li>
-            </ul>
+            <img src="./assets/img/reviews/img-1 (8).png" class="img-fluid" alt="">
           </div>
         </div>
       </div>
