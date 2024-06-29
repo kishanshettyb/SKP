@@ -12082,18 +12082,14 @@ body {
   }
 }
 .catering-services-div .logo-div {
-  background-color: #fff;
-  width: 240px;
-  height: 240px;
-  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
 }
 .catering-services-div .logo-div img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 .catering-services-div .heading {
   background-color: #fff;
@@ -12114,6 +12110,21 @@ body {
   font-size: 1.5rem;
 }
 
+.menu h2, .menu .h2 {
+  color: #d4904c;
+  font-weight: 600;
+  font-style: italic;
+}
+.menu h3, .menu .h3 {
+  color: #d4904c;
+  font-weight: 600;
+  font-style: italic;
+}
+.menu img {
+  width: 50px;
+  height: 50px;
+}
+
 .footer {
   border-top: 1px solid #ddd;
   padding: 10px 0;
@@ -12130,6 +12141,7 @@ body {
 .whatsapp img {
   width: 50px;
   height: 50px;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=custom.css.map */

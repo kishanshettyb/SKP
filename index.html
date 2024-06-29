@@ -24,28 +24,7 @@
 </head>
 
 <body>
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Us</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body position-relative">
 
-          <iframe id="JotFormIFrame-241733866990065" title="Form" onload="window.parent.scrollTo(0,0)"
-            style="border-radius: 30px;width: 100%;" allowtransparency="true"
-            allow="geolocation; microphone; camera; fullscreen" src="https://form.jotform.com/241733866990065"
-            frameborder="0" style="min-width:100%;max-width:100%;height:539px;border:none;" scrolling="no">
-          </iframe>
-          <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-          <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-241733866990065']", "https://form.jotform.com/")</script>
-          <div class="modal-foot"></div>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- Start Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar-example2">
     <div class="container">
@@ -79,9 +58,10 @@
           </li>
         </ul>
         <div class="d-flex">
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary px-4">
+          <a target="_blank" href="https://wa.me/9999999999?text=I'm%20interested%20in%20your%20service"
+            class="btn btn-primary px-4">
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -89,7 +69,7 @@
   <!-- End Navbar -->
 
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
     <!-- Start Banner -->
     <section class="banner" id="home">
       <div class="container mb-5">
@@ -100,8 +80,8 @@
               leavened for a soft,
               chewy texture, and cooked in a tandoor or on a griddle. They can be plain or stuffed with ingredients like
               potatoes or paneer.</p>
-            <button data-bs-toggle="modal" data-bs-target="#exampleModal"
-              class="btn btn-outline-primary btn-lg my-3">Contact Us</button>
+            <a target="_blank" href="https://wa.me/9999999999?text=I'm%20interested%20in%20your%20service"
+              class="btn btn-outline-primary btn-lg my-3">Contact Us</a>
           </div>
           <div class="col-md-6">
             <div class="position-relative banner-img-wrapper d-none d-lg-block">
@@ -188,8 +168,8 @@
                 non-vegetarian options. From the rich flavors of curries to the sizzling specialties of our tandoor, we
                 cater to all your culinary desires.
               </h4>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary btn-lg
-              px-10 mt-4">Contact Us</button>
+              <a target="_blank" href="https://wa.me/9999999999?text=I'm%20interested%20in%20your%20service" class="btn btn-primary btn-lg
+              px-10 mt-4">Contact Us</a>
             </div>
           </div>
           <div class="col-md-5">
@@ -244,16 +224,46 @@
     <!-- Caterenig Services -->
     <section class="section-padding catering-services-section" id="catering">
       <div class="container">
-        <div class="catering-services-div">
+        <div class="catering-services-div rounded-2">
           <div class="logo-div">
-            <img src="./assets/img/skp-logo.svg" class="logo" alt="">
+            <img src="./assets/img/logo.png" class="logo" alt="">
           </div>
-          <div class="heading">
-            <h2 class="display-5 fw-bold">Categing Services</h2>
+          <div class="heading rounded-2">
+            <h2 class="display-5 fw-bold ">Categing Services</h2>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi at ab magnam, animi dolor unde delectus
-            dolores
-            veritatis fuga libero et aliquid nobis sapiente! Molestias reprehenderit accusantium quas at placeat.</p>
+          <p>SKP Foods brings the taste of tradition to your plate, offering a delightful variety of catering services
+            across India. We specialize in authentic Indian cuisine, featuring both vegetarian and non-vegetarian
+            options. From the rich flavors of curries to the sizzling specialties of our tandoor, we cater to all your
+            culinary desires.</p>
+          <div class="row justify-content-center ">
+            <div class="col-md-10">
+              <div class="shadow-lg bg-white p-5 rounded-2 menu">
+                <h2 class="fw-bold text-center display-5">Authentic Dishes</h2>
+                <p class="text-center text-black fw-semibold mb-5">Our extensive menu boasts a delectable selection of:
+                </p>
+                <div class="row justify-content-start">
+                  <div class="col-md-4 text-start">
+                    <img src="./assets/img/logo.png" alt="">
+                    <h3>Our Menu</h3>
+                    <p class="fw-semibold text-black text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-start">
+                    <img src="./assets/img/logo.png" alt="">
+                    <h3>Chinese Delights</h3>
+                    <p class="fw-semibold text-black text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-start">
+                    <img src="./assets/img/logo.png" alt="">
+                    <h3>Tandoor Sizzlers</h3>
+                    <p class="fw-semibold text-black text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
